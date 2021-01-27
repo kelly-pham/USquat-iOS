@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48BEAC526AEB73CCF4BFB7B8 /* libPods-USquat-iosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83F449FFB5C46B5110AF8DB /* libPods-USquat-iosTests.a */; };
+		819019934756B7B5BFD991CE /* libPods-USquat-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A25D8741FAA21BFB6915C8D9 /* libPods-USquat-ios.a */; };
+		A2380EF825B0D4920003E26C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2380EF725B0D4920003E26C /* HomeView.swift */; };
+		A2380F0625B0E7080003E26C /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2380F0525B0E7080003E26C /* Gallery.swift */; };
+		A23DEC9325BBAB8A00424899 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23DEC9225BBAB8A00424899 /* CameraViewController.swift */; };
+		A2AFCB0825AF838200D3CF41 /* USquat_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFCB0725AF838200D3CF41 /* USquat_iosApp.swift */; };
+		A2AFCB0A25AF838200D3CF41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFCB0925AF838200D3CF41 /* ContentView.swift */; };
+		A2AFCB0C25AF838300D3CF41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AFCB0B25AF838300D3CF41 /* Assets.xcassets */; };
+		A2AFCB0F25AF838300D3CF41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AFCB0E25AF838300D3CF41 /* Preview Assets.xcassets */; };
+		A2AFCB1A25AF838300D3CF41 /* USquat_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFCB1925AF838300D3CF41 /* USquat_iosTests.swift */; };
+		A2AFCB2525AF838300D3CF41 /* USquat_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFCB2425AF838300D3CF41 /* USquat_iosUITests.swift */; };
+		A2BAF30625B0279700305ED2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2BAF30525B0279700305ED2 /* GoogleService-Info.plist */; };
+		D36CAF5D264DED085EE33006 /* libPods-USquat-ios-USquat-iosUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD2DE67AEA3048B80DCC3179 /* libPods-USquat-ios-USquat-iosUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2AFCB1625AF838300D3CF41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2AFCAFC25AF838200D3CF41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2AFCB0325AF838200D3CF41;
+			remoteInfo = "USquat-ios";
+		};
+		A2AFCB2125AF838300D3CF41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2AFCAFC25AF838200D3CF41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2AFCB0325AF838200D3CF41;
+			remoteInfo = "USquat-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01AD6619D3B7C00E382FD27F /* Pods-USquat-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USquat-iosTests.release.xcconfig"; path = "Target Support Files/Pods-USquat-iosTests/Pods-USquat-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		2766069F6F3F55D95802ED71 /* Pods-USquat-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USquat-ios.debug.xcconfig"; path = "Target Support Files/Pods-USquat-ios/Pods-USquat-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		41EF2A495FC1D7D365BB4707 /* Pods-USquat-ios-USquat-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USquat-ios-USquat-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-USquat-ios-USquat-iosUITests/Pods-USquat-ios-USquat-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8BDF38A21D5A9848D230C082 /* Pods-USquat-ios-USquat-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USquat-ios-USquat-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-USquat-ios-USquat-iosUITests/Pods-USquat-ios-USquat-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A2380EF725B0D4920003E26C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A2380F0525B0E7080003E26C /* Gallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery.swift; sourceTree = "<group>"; };
+		A23DEC9225BBAB8A00424899 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		A25D8741FAA21BFB6915C8D9 /* libPods-USquat-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-USquat-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2AFCB0425AF838200D3CF41 /* USquat-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "USquat-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2AFCB0725AF838200D3CF41 /* USquat_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USquat_iosApp.swift; sourceTree = "<group>"; };
+		A2AFCB0925AF838200D3CF41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A2AFCB0B25AF838300D3CF41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2AFCB0E25AF838300D3CF41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A2AFCB1025AF838300D3CF41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2AFCB1525AF838300D3CF41 /* USquat-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "USquat-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2AFCB1925AF838300D3CF41 /* USquat_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USquat_iosTests.swift; sourceTree = "<group>"; };
+		A2AFCB1B25AF838300D3CF41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2AFCB2025AF838300D3CF41 /* USquat-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "USquat-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2AFCB2425AF838300D3CF41 /* USquat_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USquat_iosUITests.swift; sourceTree = "<group>"; };
+		A2AFCB2625AF838300D3CF41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2BAF30525B0279700305ED2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B6501DF1D954A312F3082F49 /* Pods-USquat-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USquat-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-USquat-iosTests/Pods-USquat-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B83F449FFB5C46B5110AF8DB /* libPods-USquat-iosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-USquat-iosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD4042540397943A3E834978 /* Pods-USquat-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USquat-ios.release.xcconfig"; path = "Target Support Files/Pods-USquat-ios/Pods-USquat-ios.release.xcconfig"; sourceTree = "<group>"; };
+		FD2DE67AEA3048B80DCC3179 /* libPods-USquat-ios-USquat-iosUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-USquat-ios-USquat-iosUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2AFCB0125AF838200D3CF41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				819019934756B7B5BFD991CE /* libPods-USquat-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2AFCB1225AF838300D3CF41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48BEAC526AEB73CCF4BFB7B8 /* libPods-USquat-iosTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2AFCB1D25AF838300D3CF41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D36CAF5D264DED085EE33006 /* libPods-USquat-ios-USquat-iosUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		009FCC84AC5146FB65F6DABF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2766069F6F3F55D95802ED71 /* Pods-USquat-ios.debug.xcconfig */,
+				BD4042540397943A3E834978 /* Pods-USquat-ios.release.xcconfig */,
+				41EF2A495FC1D7D365BB4707 /* Pods-USquat-ios-USquat-iosUITests.debug.xcconfig */,
+				8BDF38A21D5A9848D230C082 /* Pods-USquat-ios-USquat-iosUITests.release.xcconfig */,
+				B6501DF1D954A312F3082F49 /* Pods-USquat-iosTests.debug.xcconfig */,
+				01AD6619D3B7C00E382FD27F /* Pods-USquat-iosTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8FACAA2BCB630715A5386BDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A25D8741FAA21BFB6915C8D9 /* libPods-USquat-ios.a */,
+				FD2DE67AEA3048B80DCC3179 /* libPods-USquat-ios-USquat-iosUITests.a */,
+				B83F449FFB5C46B5110AF8DB /* libPods-USquat-iosTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2380EFC25B0E67B0003E26C /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				A2380F0525B0E7080003E26C /* Gallery.swift */,
+				A23DEC9225BBAB8A00424899 /* CameraViewController.swift */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		A2AFCAFB25AF838200D3CF41 = {
+			isa = PBXGroup;
+			children = (
+				A2BAF30525B0279700305ED2 /* GoogleService-Info.plist */,
+				A2AFCB0625AF838200D3CF41 /* USquat-ios */,
+				A2AFCB1825AF838300D3CF41 /* USquat-iosTests */,
+				A2AFCB2325AF838300D3CF41 /* USquat-iosUITests */,
+				A2AFCB0525AF838200D3CF41 /* Products */,
+				009FCC84AC5146FB65F6DABF /* Pods */,
+				8FACAA2BCB630715A5386BDC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A2AFCB0525AF838200D3CF41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2AFCB0425AF838200D3CF41 /* USquat-ios.app */,
+				A2AFCB1525AF838300D3CF41 /* USquat-iosTests.xctest */,
+				A2AFCB2025AF838300D3CF41 /* USquat-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2AFCB0625AF838200D3CF41 /* USquat-ios */ = {
+			isa = PBXGroup;
+			children = (
+				A2380EFC25B0E67B0003E26C /* SubView */,
+				A2AFCB0725AF838200D3CF41 /* USquat_iosApp.swift */,
+				A2AFCB0925AF838200D3CF41 /* ContentView.swift */,
+				A2AFCB0B25AF838300D3CF41 /* Assets.xcassets */,
+				A2AFCB1025AF838300D3CF41 /* Info.plist */,
+				A2AFCB0D25AF838300D3CF41 /* Preview Content */,
+				A2380EF725B0D4920003E26C /* HomeView.swift */,
+			);
+			path = "USquat-ios";
+			sourceTree = "<group>";
+		};
+		A2AFCB0D25AF838300D3CF41 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A2AFCB0E25AF838300D3CF41 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A2AFCB1825AF838300D3CF41 /* USquat-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2AFCB1925AF838300D3CF41 /* USquat_iosTests.swift */,
+				A2AFCB1B25AF838300D3CF41 /* Info.plist */,
+			);
+			path = "USquat-iosTests";
+			sourceTree = "<group>";
+		};
+		A2AFCB2325AF838300D3CF41 /* USquat-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A2AFCB2425AF838300D3CF41 /* USquat_iosUITests.swift */,
+				A2AFCB2625AF838300D3CF41 /* Info.plist */,
+			);
+			path = "USquat-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2AFCB0325AF838200D3CF41 /* USquat-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2AFCB2925AF838300D3CF41 /* Build configuration list for PBXNativeTarget "USquat-ios" */;
+			buildPhases = (
+				D69B8960C54679FB447CB90C /* [CP] Check Pods Manifest.lock */,
+				A2AFCB0025AF838200D3CF41 /* Sources */,
+				A2AFCB0125AF838200D3CF41 /* Frameworks */,
+				A2AFCB0225AF838200D3CF41 /* Resources */,
+				76E8FA034E117CF1529FCC63 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "USquat-ios";
+			productName = "USquat-ios";
+			productReference = A2AFCB0425AF838200D3CF41 /* USquat-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A2AFCB1425AF838300D3CF41 /* USquat-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2AFCB2C25AF838300D3CF41 /* Build configuration list for PBXNativeTarget "USquat-iosTests" */;
+			buildPhases = (
+				8252300D98D1EDD68BB5B809 /* [CP] Check Pods Manifest.lock */,
+				A2AFCB1125AF838300D3CF41 /* Sources */,
+				A2AFCB1225AF838300D3CF41 /* Frameworks */,
+				A2AFCB1325AF838300D3CF41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2AFCB1725AF838300D3CF41 /* PBXTargetDependency */,
+			);
+			name = "USquat-iosTests";
+			productName = "USquat-iosTests";
+			productReference = A2AFCB1525AF838300D3CF41 /* USquat-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A2AFCB1F25AF838300D3CF41 /* USquat-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2AFCB2F25AF838300D3CF41 /* Build configuration list for PBXNativeTarget "USquat-iosUITests" */;
+			buildPhases = (
+				3C6CA36AF4AC46E842D18465 /* [CP] Check Pods Manifest.lock */,
+				A2AFCB1C25AF838300D3CF41 /* Sources */,
+				A2AFCB1D25AF838300D3CF41 /* Frameworks */,
+				A2AFCB1E25AF838300D3CF41 /* Resources */,
+				950E0DD3BFA9ACF0BDAB06EF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2AFCB2225AF838300D3CF41 /* PBXTargetDependency */,
+			);
+			name = "USquat-iosUITests";
+			productName = "USquat-iosUITests";
+			productReference = A2AFCB2025AF838300D3CF41 /* USquat-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2AFCAFC25AF838200D3CF41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					A2AFCB0325AF838200D3CF41 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					A2AFCB1425AF838300D3CF41 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = A2AFCB0325AF838200D3CF41;
+					};
+					A2AFCB1F25AF838300D3CF41 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = A2AFCB0325AF838200D3CF41;
+					};
+				};
+			};
+			buildConfigurationList = A2AFCAFF25AF838200D3CF41 /* Build configuration list for PBXProject "USquat-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2AFCAFB25AF838200D3CF41;
+			productRefGroup = A2AFCB0525AF838200D3CF41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2AFCB0325AF838200D3CF41 /* USquat-ios */,
+				A2AFCB1425AF838300D3CF41 /* USquat-iosTests */,
+				A2AFCB1F25AF838300D3CF41 /* USquat-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2AFCB0225AF838200D3CF41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2AFCB0F25AF838300D3CF41 /* Preview Assets.xcassets in Resources */,
+				A2AFCB0C25AF838300D3CF41 /* Assets.xcassets in Resources */,
+				A2BAF30625B0279700305ED2 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2AFCB1325AF838300D3CF41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2AFCB1E25AF838300D3CF41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C6CA36AF4AC46E842D18465 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-USquat-ios-USquat-iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76E8FA034E117CF1529FCC63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-USquat-ios/Pods-USquat-ios-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-USquat-ios/Pods-USquat-ios-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-USquat-ios/Pods-USquat-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8252300D98D1EDD68BB5B809 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-USquat-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		950E0DD3BFA9ACF0BDAB06EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-USquat-ios-USquat-iosUITests/Pods-USquat-ios-USquat-iosUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-USquat-ios-USquat-iosUITests/Pods-USquat-ios-USquat-iosUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-USquat-ios-USquat-iosUITests/Pods-USquat-ios-USquat-iosUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D69B8960C54679FB447CB90C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-USquat-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2AFCB0025AF838200D3CF41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2380F0625B0E7080003E26C /* Gallery.swift in Sources */,
+				A23DEC9325BBAB8A00424899 /* CameraViewController.swift in Sources */,
+				A2380EF825B0D4920003E26C /* HomeView.swift in Sources */,
+				A2AFCB0A25AF838200D3CF41 /* ContentView.swift in Sources */,
+				A2AFCB0825AF838200D3CF41 /* USquat_iosApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2AFCB1125AF838300D3CF41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2AFCB1A25AF838300D3CF41 /* USquat_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2AFCB1C25AF838300D3CF41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2AFCB2525AF838300D3CF41 /* USquat_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2AFCB1725AF838300D3CF41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2AFCB0325AF838200D3CF41 /* USquat-ios */;
+			targetProxy = A2AFCB1625AF838300D3CF41 /* PBXContainerItemProxy */;
+		};
+		A2AFCB2225AF838300D3CF41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2AFCB0325AF838200D3CF41 /* USquat-ios */;
+			targetProxy = A2AFCB2125AF838300D3CF41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A2AFCB2725AF838300D3CF41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2AFCB2825AF838300D3CF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2AFCB2A25AF838300D3CF41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2766069F6F3F55D95802ED71 /* Pods-USquat-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"USquat-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = Z3DY583968;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "USquat-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kelly-pham.USquat-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2AFCB2B25AF838300D3CF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD4042540397943A3E834978 /* Pods-USquat-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"USquat-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = Z3DY583968;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "USquat-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kelly-pham.USquat-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A2AFCB2D25AF838300D3CF41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6501DF1D954A312F3082F49 /* Pods-USquat-iosTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "USquat-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kelly-pham.USquat-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/USquat-ios.app/USquat-ios";
+			};
+			name = Debug;
+		};
+		A2AFCB2E25AF838300D3CF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01AD6619D3B7C00E382FD27F /* Pods-USquat-iosTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "USquat-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kelly-pham.USquat-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/USquat-ios.app/USquat-ios";
+			};
+			name = Release;
+		};
+		A2AFCB3025AF838300D3CF41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41EF2A495FC1D7D365BB4707 /* Pods-USquat-ios-USquat-iosUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "USquat-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kelly-pham.USquat-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "USquat-ios";
+			};
+			name = Debug;
+		};
+		A2AFCB3125AF838300D3CF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BDF38A21D5A9848D230C082 /* Pods-USquat-ios-USquat-iosUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "USquat-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kelly-pham.USquat-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "USquat-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2AFCAFF25AF838200D3CF41 /* Build configuration list for PBXProject "USquat-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2AFCB2725AF838300D3CF41 /* Debug */,
+				A2AFCB2825AF838300D3CF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2AFCB2925AF838300D3CF41 /* Build configuration list for PBXNativeTarget "USquat-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2AFCB2A25AF838300D3CF41 /* Debug */,
+				A2AFCB2B25AF838300D3CF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2AFCB2C25AF838300D3CF41 /* Build configuration list for PBXNativeTarget "USquat-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2AFCB2D25AF838300D3CF41 /* Debug */,
+				A2AFCB2E25AF838300D3CF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2AFCB2F25AF838300D3CF41 /* Build configuration list for PBXNativeTarget "USquat-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2AFCB3025AF838300D3CF41 /* Debug */,
+				A2AFCB3125AF838300D3CF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2AFCAFC25AF838200D3CF41 /* Project object */;
+}
