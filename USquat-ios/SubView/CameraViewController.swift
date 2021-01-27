@@ -15,6 +15,21 @@ struct CameraViewController: View {
         ZStack{
             CameraPreview(camera: camera)
                 .ignoresSafeArea(.all, edges: .all)
+            
+            // Draw Switch Button
+            VStack{
+                HStack{
+                    Spacer()
+                    Button(action: camera.changeCamera, label:{
+                        Text("Switch")
+                            .foregroundColor(.black)
+                            .padding()
+                            .background(Color.white)
+                            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+
+                    })
+                }
+            }
         }
         .onAppear(){
             camera.Check()
@@ -41,10 +56,16 @@ class CameraModel: ObservableObject{
     @Published var session = AVCaptureSession()
     @Published var setupResult: SessionSetupResult = .success
     
+    // video input
+    @objc dynamic var videoDeviceInput: AVCaptureDeviceInput!
+    private let videoDeviceDiscoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInDualCamera,.builtInWideAngleCamera,.builtInTrueDepthCamera], mediaType: .video, position: .unspecified)
+    // Manage session
+    private var sessionQueue = DispatchQueue(label: "session queue")
+    
     // AV preview
     @Published var preview: AVCaptureVideoPreviewLayer!
     
-    
+    // MARK: CHECK CAMERA PERMISSION
     func Check(){
         // Checking permission to use Camera
         switch AVCaptureDevice.authorizationStatus(for: .video){
@@ -134,6 +155,31 @@ class CameraModel: ObservableObject{
             print(error.localizedDescription)
         }
     }
+    
+    // MARK: CHANGE CAMERA VIEW
+   
+    func changeCamera() {
+        self.session.beginConfiguration()
+        // get current input
+        let currentInput = self.session.inputs.first as? AVCaptureDeviceInput
+        // remove input
+        self.session.removeInput(currentInput!)
+        // If current camera is .back then switch to front and vice versa
+        let newCameraDevice = currentInput?.device.position == .back ? getCamera(with: .front) : getCamera(with: .back)
+        // add new input
+        let newVideoInput = try? AVCaptureDeviceInput(device: newCameraDevice!)
+        self.session.addInput(newVideoInput!)
+        
+        // Commit Device Configuration
+        self.session.commitConfiguration()
+    }
+    
+    func getCamera(with position: AVCaptureDevice.Position) -> AVCaptureDevice? {
+        let devices = self.videoDeviceDiscoverySession.devices
+        return devices.filter {
+            $0.position == position
+            }.first
+    }
 }
 
 // MARK: CAMERA PREVIEW to DISPLAY
@@ -161,3 +207,4 @@ struct CameraPreview: UIViewRepresentable{
         
     }
 }
+
